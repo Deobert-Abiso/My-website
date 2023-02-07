@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="style1.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    
+   <body>
+       <div class="header-design">
+        <header>
+          <div class="logo">
+            <h1>Your Logo</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#" onclick="showHome();">Home</a></li>
+              <li><a href="#" onclick="showAbout();">About</a></li>
+            </ul>
+          </nav>
+        </header>
+           <!--home content-->
+       <div class="content" id="home-content">
+         <h2>Discover New Music</h2>
+           <p>Find your next favorite song with our music discovery platform. Explore a wide variety of genres and artists to expand your music knowledge and listening experiences. Join now and start discovering the world of music with us!</p>
+             <a href="#" class="button">Start Discovering</a>
+       </div>
+          <!--about us-->
+       <div class="content" id="about-content" style="display: none;">
+         <h2>About Us</h2>
+           <p>We are a music discovery platform dedicated to helping you find your next favorite song. Our team of experts curates a diverse selection of genres and artists to ensure that there's something for everyone. Join us today and start discovering the world of music!</p>
+       </div>
+           
+           
+           
+           
+           
+           
+    
+           
+           
+           
+       </div>
+
+       
+       <script>
+       
+       function showHome() {
+         document.getElementById("home-content").style.display = "block";
+         document.getElementById("about-content").style.display = "none";
+       }
+
+       function showAbout() {
+         document.getElementById("home-content").style.display = "none";
+         document.getElementById("about-content").style.display = "block";
+       }
+           
+           
+       </script>
+        
+        
+    </body>  
+</html>
