@@ -1,123 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
-/*navigation*/
-header {
-  display: flex;
-  justify-content: space-between;
-}
-.header-design{
-      padding: 1.5em 5em;
 
+
+/*navigation*/
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
+
+.header-design {
+    padding: 1.5em 5em;
+}
+
 .logo h1 {
-  margin:0;
+    margin: 0;
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-  display: block;
-  padding: 10px 3px 0;
-    margin-right:1em; 
-  text-decoration: none;
-  color: black;
+    display: block;
+    padding: 10px 3px 0;
+    margin-right: 1em;
+    text-decoration: none;
+    color: black;
     position: relative;
-  transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
-nav a::after{
-  content: '';
-  position: absolute;
-  bottom:-1px;
-  left: 50%;
-  width: 0;
-  height: 2px;
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0;
+    height: 2px;
     border-radius: 10px;
-  background-color: black;
-  transition: all 0.2s ease-in-out;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
+
+
 /*content*/
+
 .content {
-  text-align: left;
-  padding: 3em 0 0 0;
+    text-align: left;
+    padding: 3em 0 0 0;
+    display: flex;
 }
 
 h2 {
- font-size:60px;
-    margin-bottom:0;
+    font-size: 60px;
+    margin-bottom: 0;
 }
-.content p{
-    max-width:30em;
+
+.content p {
+    max-width: 30em;
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 .button {
-  display: inline-block;
-  padding: 1em 2em;
-  background-color: blue;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
+.content-img {
+    width: 400px;
+    margin-left: 100px;
+}
+
+
 /* put the img layout here*/
 
 
-
-
-
-
-
-
 /*type of song*/
-.typesong{
-  padding: 1.5em 5em;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-   
+
+.typesong {
+    padding: 1.5em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .typesong ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  position: absolute;
-  bottom:30px;
- 
-  
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    bottom: 30px;
 }
 
-.typesong a{
-    color:#111;
+.typesong a {
+    color: #111;
     font-weight: bold;
     text-decoration: none;
-    font-size:18px;
+    font-size: 18px;
 }
 
-
 .typesong li {
-  margin: 0 6em;
+    margin: 0 6em;
 }
 
 
 /*animation*/
-.content{
-    animation:transitionIn 0.75s;
+
+.content {
+    animation: transitionIn 0.75s;
 }
 
 @keyframes transitionIn {
@@ -125,17 +134,8 @@ h2 {
         opacity: 0;
         transform: rotateX(-10deg);
     }
-    to{
+    to {
         opacity: 1;
         transform: rotateX(0);
     }
 }
-
-
-
-
-
-
-
-
-
