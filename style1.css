@@ -72,11 +72,54 @@ h2 {
   text-decoration: none;
   border-radius: 5px;
 }
+/* put the img layout here*/
 
-/*animate about and home*/
+
+
+
+
+
+
+
+/*type of song*/
+.typesong{
+  padding: 1.5em 5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+   
+}
+
+.typesong ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  bottom:30px;
+ 
+  
+    
+}
+
+.typesong a{
+    color:#111;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:18px;
+}
+
+
+.typesong li {
+  margin: 0 6em;
+}
+
+
+/*animation*/
 .content{
     animation:transitionIn 0.75s;
 }
+
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -87,6 +130,7 @@ h2 {
         transform: rotateX(0);
     }
 }
+
 
 
 
