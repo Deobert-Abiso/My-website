@@ -24,35 +24,85 @@
          <h2>Discover New Music</h2>
            <p>Find your next favorite song with our music discovery platform. Explore a wide variety of genres and artists to expand your music knowledge and listening experiences. Join now and start discovering the world of music with us!</p>
              <a href="#" class="button">Start Discovering</a>
+<!--           put the image here-->
        </div>
           <!--about us-->
        <div class="content" id="about-content" style="display: none;">
          <h2>About Us</h2>
            <p>We are a music discovery platform dedicated to helping you find your next favorite song. Our team of experts curates a diverse selection of genres and artists to ensure that there's something for everyone. Join us today and start discovering the world of music!</p>
        </div>
+<!--           phonk-->
+       <div class="content" id="phonk-content" style="display: none;">
+         <h2>Phonk</h2>
+           <p>Phonk is a genre of music that was created in the early 1990s by DJ Screw. It is a style of hip hop that is characterized by slow, heavily-mutated beats and sampled vocals. Phonk is often associated with the Houston hip hop scene, as it was created and popularized by DJ Screw and his crew, the Screwed Up Click.</p>
+               <a href="#" class="button">List of Songs</a>
+       </div>
+<!--           edm-->
+       <div class="content" id="edm-content" style="display: none;">
+         <h2>Edm</h2>
+           <p>Electronic dance music: a range of genres of electronic music often played in nightclubs and characterized by a strong danceable beat: The festival lineup includes several popular EDM artists.</p>
+               <a href="#" class="button">List of Songs</a>
+       </div>
+<!--           instrumental-->
+       <div class="content" id="instrumental-content" style="display: none;">
+         <h2>Instrumental</h2>
+           <p>An instrumental is a recording without any vocals, although it might include some inarticulate vocals, such as shouted backup vocals in a Big Band setting. Through semantic widening, a broader sense of the word song may refer to instrumentals. The music is primarily or exclusively produced using musical instruments.</p>
+               <a href="#" class="button">List of Songs</a>
+       </div>
            
            
+          <!--  song button  -->
+           <div class="typesong">
+            <ul>
+              <li><a href="#" onclick="showPhonk();">Phonk</a></li>
+              <li><a href="#" onclick="showEdm();">Edm</a></li>
+              <li><a href="#" onclick="showInstrumental();">Instrumental</a></li>
+            </ul>
+           </div>
+ 
            
-           
-           
-           
-    
-           
-           
+        
            
        </div>
-
-       
+ 
+<!--      toggle on the button      -->
        <script>
        
        function showHome() {
          document.getElementById("home-content").style.display = "block";
          document.getElementById("about-content").style.display = "none";
+         document.getElementById("phonk-content").style.display = "none";
+         document.getElementById("edm-content").style.display = "none";
+         document.getElementById("instrumental-content").style.display = "none";
        }
 
        function showAbout() {
          document.getElementById("home-content").style.display = "none";
          document.getElementById("about-content").style.display = "block";
+         document.getElementById("phonk-content").style.display = "none";
+         document.getElementById("edm-content").style.display = "none";
+         document.getElementById("instrumental-content").style.display = "none";
+       }
+           function showPhonk() {
+         document.getElementById("home-content").style.display = "none";
+         document.getElementById("about-content").style.display = "none";
+         document.getElementById("phonk-content").style.display = "block";
+         document.getElementById("edm-content").style.display = "none";
+         document.getElementById("instrumental-content").style.display = "none";
+       }
+            function showEdm() {
+         document.getElementById("home-content").style.display = "none";
+         document.getElementById("about-content").style.display = "none";
+         document.getElementById("phonk-content").style.display = "none";
+         document.getElementById("edm-content").style.display = "block";
+         document.getElementById("instrumental-content").style.display = "none";
+       }
+            function showInstrumental() {
+         document.getElementById("home-content").style.display = "none";
+         document.getElementById("about-content").style.display = "none";
+         document.getElementById("phonk-content").style.display = "none";
+         document.getElementById("edm-content").style.display = "none";
+         document.getElementById("instrumental-content").style.display = "block";
        }
            
            
