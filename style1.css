@@ -19,6 +19,7 @@ header {
 
 .logo h1 {
    margin: 0;
+    color: #111;
 }
 
 nav ul {
@@ -33,7 +34,7 @@ nav a {
    padding: 10px 3px 0;
    margin-right: 1em;
    text-decoration: none;
-   color: black;
+   color:#111;
    position: relative;
    transition: all 0.2s ease-in-out;
 }
@@ -46,7 +47,7 @@ nav a::after {
    width: 0;
    height: 2px;
    border-radius: 10px;
-   background-color: black;
+   background-color:#111;
    transition: all 0.2s ease-in-out;
 }
 
@@ -60,37 +61,61 @@ nav a:hover::after {
 
 .content {
    text-align: left;
-   padding: 3em 0 0 0;
+   padding: 5em 0 0 0;
    display: flex;
 }
 
 h2 {
    font-size: 60px;
    margin-bottom: 0;
+    margin-top: 0;
+    color: #111;
 }
 
 .content p {
    max-width: 30em;
    margin-top: 0;
    margin-bottom: 10px;
+    color: #111;
 }
 
 .button {
    display: inline-block;
    padding: 1em 2em;
-   background-color: blue;
-   color: white;
+   background-color:#219AEA;
+   color:#fff;
    text-decoration: none;
    border-radius: 5px;
 }
 
+/*img layout*/
 .content-img {
-   width: 400px;
+   width:400px;
    margin-left: 100px;
+    border-radius:3px; 
 }
-
-
-/* put the img layout here*/
+.content-img1 {
+   width:500px;
+   margin-left:200px;
+    border-radius:3px; 
+}
+/*icon*/
+.icon-menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-top:13px;
+}
+.icon-menu a{
+    margin-right:17px;
+    font-size:23px;
+}
+.icon-menu a i{
+    color:#fff;
+    background-color:#219AEA;
+    border-radius:50%;
+    padding:3px;
+}
 
 
 /*type of song*/
@@ -112,16 +137,60 @@ h2 {
 }
 
 .typesong a {
-   color: #111;
+    color:#111;
    font-weight: bold;
    text-decoration: none;
    font-size: 18px;
 }
 
 .typesong li {
-   margin: 0 6em;
+   margin: 0 1.5em;
+}
+.typesong button{
+    padding:8px;
+    border-radius:50%;
+    background-color: #B3B6B7;
+    border: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+.typesong button:hover{
+    background-color: #333;
+}
+.typesong button[data-tooltip]:after {
+   content: "";
+   position: absolute;
+    top:3px;
+   transform: translateX(-50%);
+   border-width: 5px;
+   border-style: solid;
+   border-color: #111  transparent transparent transparent;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s ease-in-out;
 }
 
+.typesong button[data-tooltip]:before {
+   content: attr(data-tooltip);
+   position: absolute;
+    bottom:90%;
+   transform: translateX(-50%);
+   background-color: #111;
+   color: #fff;
+   padding: 5px 10px;
+   border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s ease-in-out;
+}
+
+
+.typesong button[data-tooltip]:hover:after,.typesong button[data-tooltip]:hover:before {
+   visibility: visible;
+   opacity: 1;
+}
 
 /*animation*/
 
@@ -139,3 +208,15 @@ h2 {
       transform: rotateX(0);
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
