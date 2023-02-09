@@ -28,7 +28,7 @@
             <a href="#" class="button">Start Discovering</a>
          </div>
          <!-- put the image here -->
-         <img class="content-img" src="./img.svg" alt="Illustration">
+         <img class="content-img" src="image/img.png" alt="Illustration">
       </div>
       <!-- about us -->
       <div class="content" id="about-content" style="display: none;">
@@ -36,8 +36,16 @@
             <h2>About Us</h2>
             <p>We are a music discovery platform dedicated to helping you find your next favorite song. Our team of experts curates a diverse selection of genres and artists to ensure that there's something for everyone. Join us today and start discovering
                the world of music!</p>
+               <!-- social icon -->
+             <div class="icon-menu">
+               <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+               <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+               <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+             </div>
+             
          </div>
          <!-- put the image here -->
+          <img class="content-img1" src="image/img1.png" alt="Illustration">
       </div>
       <!-- phonk -->
       <div class="content" id="phonk-content" style="display: none;">
@@ -48,6 +56,7 @@
             <a href="#" class="button">List of Songs</a>
          </div>
          <!-- put the image here -->
+          <img class="content-img1" src="image/phonk.jpg" alt="Illustration">
       </div>
       <!-- edm -->
       <div class="content" id="edm-content" style="display: none;">
@@ -57,6 +66,7 @@
             <a href="#" class="button">List of Songs</a>
          </div>
          <!-- put the image here -->
+          <img class="content-img1" src="image/edm.jpg" alt="Illustration">
       </div>
       <!-- instrumental -->
       <div class="content" id="instrumental-content" style="display: none;">
@@ -67,13 +77,14 @@
             <a href="#" class="button">List of Songs</a>
          </div>
          <!-- put the image here -->
+           <img class="content-img1" src="image/instrumental.jpg" alt="Illustration">
       </div>
       <!-- song button -->
       <div class="typesong">
          <ul>
-            <li><a href="#" onclick="showPhonk();">Phonk</a></li>
-            <li><a href="#" onclick="showEdm();">Edm</a></li>
-            <li><a href="#" onclick="showInstrumental();">Instrumental</a></li>
+            <li><a href="#" onclick="showPhonk();"><button data-tooltip="Phonk"></button></a></li>
+            <li><a href="#" onclick="showEdm();"><button data-tooltip="Edm"></button></a></li>
+            <li><a href="#" onclick="showInstrumental();"><button data-tooltip="Instrumental"></button></a></li>
          </ul>
       </div>
    </div>
@@ -119,6 +130,8 @@
          document.getElementById("edm-content").style.display = "none";
          document.getElementById("instrumental-content").style.display = "flex";
       }
+       
+       
    </script>
 
 </body>
